@@ -1,0 +1,1 @@
+You can open webpages using https://pp2-21b030936.github.io/Web-Dev/ + "relative path to html file"
