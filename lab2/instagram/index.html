@@ -1,52 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <link rel = "shorcut icon" href = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+            font-family:sans-serif}
+        a{text-decoration:none}
+        img{max-width:100%;
+            height:auto}
+        html{font-size:14px
+        }
+        body{background-color:#fafafa;
+            color:#262626}
+        .l-main{width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            overflow:hidden}
+        @media (max-width: 449px)
+        {.l-main{display:block}}
+        @media (max-width: 874px){
+            .l-main .l-main__img{display:none}}
+        .l-user{display:flex;
+            flex-direction:column}
+        .group{background:#fff;
+            border:1px solid lightgrey}
+        @media (max-width: 449px){
+            .group{background:inherit;
+                border:none}}
+        .c-panel{display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+            padding:40px 40px 0}
+        .c-panel .c-panel__img{height:51px;
+            width:175px;
+            margin-bottom:30px}
+        .c-panel .c-panel__form{display:flex;
+            flex-direction:column;
+            text-align:center;
+            width:250px}
+        .c-panel .c-panel__form .c-btn{margin-top:14px}
+        .c-panel .c-panel__form .c-panel__input{color:#262626;
+            background:#fafafa;
+            border:1px solid lightgray;
+            padding:9px 0 7px 8px;
+            border-radius:4px;
+            outline:none}
+        .c-panel .c-panel__form .c-panel__input:nth-child(1){margin-bottom:6px}
+        .c-panel .c-panel__form .c-panel__span{font-size:13px;
+            font-weight:600;
+            color:#8e8e8e;
+            margin:16px 0 30px 0;
+            position:relative}
+        .c-panel .c-panel__form .c-panel__span::after{content:'';
+            position:absolute;
+            display:inline-block;
+            vertical-align:middle;
+            background:lightgray;
+            width:40%;
+            height:1.5px;
+            top:8px;
+            right:0}
+        .c-panel .c-panel__form .c-panel__span::before{content:'';
+            position:absolute;
+            display:inline-block;
+            vertical-align:middle;
+            background:lightgray;
+            width:40%;
+            height:1.5px;
+            top:8px;
+            left:0px}
+        .c-panel .c-panel__facebook{color:#385185;display:flex}
+        .c-panel .c-panel__facebook::before{content:'';
+            display:inline-block;
+            width:16px;
+            height:16px;
+            /*background:url(../img/facebook.svg);*/
+            margin-right:8px}
+        .c-panel .c-panel__forgot{margin:20px 0 20px;
+            font-size:12px;
+            color:#0095f6}
+        .c-btn{color:#fff;
+            font-weight:500;
+            background:#0095f6;
+            border-radius:4px;
+            font-size:14px;
+            line-height:18px;
+            padding:6px 0}
+        .c-app p{text-align:center;
+            margin:20px 0}
+        .c-app .c-app__download{display:flex;
+            justify-content:center;
+            cursor:pointer}
+        .c-app .c-app__download img{max-width:140px;
+            max-height:40px}
+        .c-app .c-app__download img:nth-child(2){margin-left:8px}
+        .c-signup{display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+            margin-top:10px}
+        .c-signup span{color:#0095f6;
+            cursor:pointer}
+        .footer_contents span{
+            color: gray;
+            padding: 10px;
+        }
+
+
+    </style>
+    </head>
 <body>
-  
-  <div class="container">
-    <div class="box">
-      <div class="heading"></div>
-      <form class="login-form">
-        <div class="field">
-          <input
-            id="username"
-            type="name"
-            placeholder="Phone number, username, or email"
-          />
-          <label for="username">Phone number, username, or email</label>
-        </div>
-        <div class="field">
-          <input id="password" type="password" placeholder="password" />
-          <label for="password">Password</label>
-        </div>
-          <button class="login-button" title="login">Log In</button>
-          <div class="separator">
-            <div class="line"></div>
-            <p>OR</p>
-            <div class="line"></div>
-          </div>
-        <div class="other">
-          <button class="fb-login-btn" type="button">
-            <i class="fa fa-facebook-official fb-icon"></i>
-            <span class="">Log in with Facebook</span>
-          </button>
-          <a class="forgot-password" href="#">Forgot password?</a>
-        </div>
-      </form>
+<main class="l-main">
+    <div class="l-main__img">
+        <img src="https://github.com/yurimutti/instagram-login-page/blob/master/assets/img/homepage.png?raw=true" alt="Smartphones" >
     </div>
-    <div class="box">
-      <p>Don't have an account? <a class="signup" href="#">Sign Up</a></p>
+    <div class="l-user">
+        <div class="c-panel group">
+            <img class="c-panel__img" src="https://raw.githubusercontent.com/yurimutti/instagram-login-page/058ed9e7358fd1330956d29953b87621d934a98b/assets/img/instagram.svg" alt="Instagram">
+            <div class="c-panel__form">
+                <input type="text" class="c-panel__input" placeholder="Телефон, имя пользователя или эл.адрес">
+                <input type="text" class="c-panel__input" placeholder="Пароль">
+                <a href="#" class="c-btn">Войти</a>
+                <span class="c-panel__span">ИЛИ</span>
+            </div>
+            <a href="#" class="c-panel__facebook">Войти через Facebook</a>
+            <a href="#" class="c-panel__forgot">Забыли пароль?</a>
+        </div>
+        <div class="c-signup group">
+            <p>У вас еще нет аккаунта? <span>Зарегистрироваться</span></p>
+        </div>
+        <div class="c-app">
+            <p>Установите приложение.</p>
+            <div class="c-app__download">
+                <img src="https://github.com/yurimutti/instagram-login-page/blob/master/assets/img/apple.png?raw=true" alt="Apple Store">
+                <img src="https://github.com/yurimutti/instagram-login-page/blob/master/assets/img/google.png?raw=true" alt="Google Play">
+            </div>
+        </div>
     </div>
-  </div>
-  <script>
-    console.log(document.getElementById('username').value);
-  </script>
-  
+</main>
+<footer>
+    <div style="height: 10%">
+        <div style = "display: flex; flex-direction: row; flex-wrap: wrap; text-align: center; justify-content: center; max-width: 1000px; margin: auto;" class = "footer_contents">
+
+
+           <span> Meta</span>
+
+           <span> Информация</span>
+
+            <span>Блог</span>
+
+            <span>Вакансии</span>
+
+            <span>Помощь</span>
+
+            <span>API</span>
+
+            <span>Конфиденциальность</span>
+
+            <span>Условия</span>
+
+        <span>Популярные аккаунты</span>
+
+       <span>Места</span>
+
+            <span>Instagram Lite</span>
+
+            <span>Загрузка контактов и лица, не являющиеся пользователями</span>
+
+           <span> Русский</span>
+
+
+            <span>© 2023 Instagram from Meta</span>
+
+
+
+
+
+
+
+        </div>
+    </div>
+</footer>
 </body>
 </html>
