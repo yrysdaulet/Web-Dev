@@ -16,6 +16,7 @@ body {
     flex-direction: column;
   }
 .header{
+    height: 5vh;
     width: 100%;
     color: whitesmoke;
     padding-left: 5%;
@@ -23,7 +24,7 @@ body {
     font-size: 8px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-header{
+header, main{
     padding: 2rem 1rem;
     max-width: 800px;
     width: 100%;
@@ -35,6 +36,68 @@ header h1{
     color: #212529;
     margin-bottom: 1rem;
 }
-#new_task_form{
-    display: flex;
+.todo_text{
+    width: 80%;
+    height: 4vh;
+    border-radius: 4px; 
+    padding-left: 1vh;
+    border:1px  solid #3f4245;
+
 }
+.add{
+    height: 4vh;
+    align-self: center;
+    color: whitesmoke;
+    background-color: mediumblue;
+    border: none;
+    border-radius: 5px;    
+    font-size: 13px;
+}
+#new_task_form, .task{
+    display: flex;
+    gap: 1.8rem;
+}
+#new_task_form{
+    padding-left: 10%;
+}
+.list{
+    flex-direction: column;
+    padding:0;
+    border: none;
+}
+.task{
+    border-radius: 4px;
+    border:1px  solid #3f4245;
+}
+.task button{
+    width: 2.5rem;
+    height: 2.5rem;
+    align-self: center;
+    border: none;
+    background-color: #fff;
+}
+.task .text{
+    width: 86%;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    border:none;
+    font-size: 18px;    
+}
+.task{
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.actions{
+    display: flex;
+    align-self: flex-end;
+}
+img{
+    width: 100%;
+}
+.checkbox{
+    height: 1rem;
+    width: 1rem;
+  }
