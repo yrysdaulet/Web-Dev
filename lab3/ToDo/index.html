@@ -21,19 +21,22 @@
     <header class="todo">
         <h1>ToDo List</h1>
         <form id="new_task_form">
-            <input class="todo_text" id="new_task_input" type="text" placeholder="New Task">
-            <button class="add">Add</button>
+            <input id="todo_text" type="text" placeholder="New Task" >
+            <button type="button" class="add" onclick="addItem(document.getElementById('todo_text'))">Add</button>
         </form>
     </header>
     <main class="list">
         <div class="content">
-            <div class="task">
-                <input type="checkbox" class="checkbox"></input>
-                <input type="text" class="text" value="First task" readonly >
+            
+            <!-- <div class="task">
+                <input type="checkbox" onclick = "overline(this)" class="checkbox"></input>
+                <input type="text" class="text" value="First task" readonly>
                 <div class="actions">
-                    <button class="delete"><img src="https://icon-library.com/images/icon-delete/icon-delete-16.jpg" alt=""></button>
+                    <button class="delete" onclick="deleteItem(this)"><img src="https://icon-library.com/images/icon-delete/icon-delete-16.jpg"
+                            alt=""></button>
                 </div>
-            </div>
+            </div> -->
+
         </div>
     </main>
 
