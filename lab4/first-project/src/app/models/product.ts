@@ -3,5 +3,6 @@ export interface Product {
     name: string;
     description: string;
     rating: {rate: number, count: number};
+    price:number;
     kaspiUrl: string;
   }

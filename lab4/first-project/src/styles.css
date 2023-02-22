@@ -16,16 +16,19 @@ body {
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  flex-direction: row;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
 }
 app-products{
   display: flex;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-app-products div {
+app-products .product {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -35,11 +38,19 @@ app-products div {
   width: 30%;
 }
 app-products .img{
-  width: 20vh;
-  height: 20vh;
-  object-fit: cover;
-  margin-bottom: 10px;
+  align-self: center;
+  width: 30vh;
+  height: 15vh;
+  
+  margin-bottom: 5px;
 }
+
+app-products .share{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
 router-outlet + *  {
   padding: 0 16px;
 }

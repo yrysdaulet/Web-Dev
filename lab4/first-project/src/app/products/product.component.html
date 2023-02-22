@@ -1,10 +1,14 @@
 <div *ngFor="let product of products" class = "product">
     <div class="img">
-        <img [src]="product.image" alt="{{product.name}} image" height="120px">
+        <a href="{{product.kaspiUrl}}"><img [src]="product.image" alt="{{product.name}} image" height="120px"></a>
     </div>
-    
-    <h2>{{product.name}}</h2>
-    <p>{{product.description}}</p>
-    <p>Rating: {{product.rating.rate}}</p>
-    <a href="{{product.kaspiUrl}}">View on Kaspi.kz</a>
+    <h2><a href="{{product.kaspiUrl}}">{{product.name}}</a></h2>
+    <p>{{product.price| currency:"KZT "}}</p>
+        <p>{{product.description}}</p>
+        <p>Rating: {{product.rating.rate}}</p>
+        <div class="share">
+            <p>Share</p>
+            <a href="https://wa.me/?text={{product.kaspiUrl}}"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/598px-WhatsApp_icon.png" alt="Whatsapp icon" width="40px"></a>    
+            <a href="https://t.me/share/url?url={{product.kaspiUrl}} "><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="Telegram icon" width="14%"></a>    
+        </div>
 </div>

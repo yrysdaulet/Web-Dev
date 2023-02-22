@@ -7,4 +7,5 @@ import { Product } from '../models/product'
 })
 export class ProductComponent{
     @Input() products!:Product[]
+    details = false
 }
