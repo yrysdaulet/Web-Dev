@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core'
 import { Product } from '../models/product'
 @Component({
-    selector: 'app-products',
+    selector: 'app-product-item',
     templateUrl: './product.component.html'
 
 })

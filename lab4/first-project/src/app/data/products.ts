@@ -91,7 +91,7 @@ export const products: Product[] = [
                 description: 'Apple iPhone 13 Pro оснащен тройной камерой с 12-мегапиксельными объективами и различными режимами съемки, позволяющими делать потрясающие фото и видео в различных условиях освещения. Отличная производительность обеспечивается благодаря процессору A15 Bionic, а дисплей Super Retina XDR с диагональю 6.1 дюйма обеспечивает высокое качество изображения. ',
                 rating: {rate:4.9, count:34},
                 price:599390,
-                kaspiUrl: 'https://kaspi.kz/shop/p/apple-iphone-13-pro-256gb-seryi-102298772/?c=750000000'
+                kaspiUrl: 'https://kaspi.kz/shop/p/apple-iphone-13-pro-256gb-seryi-102298772/?c=750000000ko'
                 },
             
         

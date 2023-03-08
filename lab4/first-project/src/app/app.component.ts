@@ -7,7 +7,6 @@ import { products as data } from './data/products';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   products:Product[] = data
 }
 
