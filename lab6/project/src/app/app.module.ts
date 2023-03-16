@@ -9,7 +9,7 @@ import { AlbumsComponent } from './albums/albums.component';
 import { FormsModule } from '@angular/forms';
 import { AlbumPhotosComponent } from './albums/album-photos/album-photos.component';
 import { AlbumDetailsComponent } from './albums/album-details/album-details.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
