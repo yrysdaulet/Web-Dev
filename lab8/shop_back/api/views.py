@@ -9,8 +9,11 @@ def index(request):
     return render(request, 'products/index.html')
 
 def products(request):
-    prod = Product.objects.all()
-    products_json = [p.to_json() for p in prod]
+    try:
+        prod = Product.objects.all()
+        products_json = [p.to_json() for p in prod]
+    except:
+        products_json =[]
     return JsonResponse(products_json, safe=False)
 
 def categories(request):

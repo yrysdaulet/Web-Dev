@@ -26,7 +26,6 @@ class Product(models.Model):
             'name': self.name,
             'price': self.price,
             'count': self.count,
-            'image': self.image,
             'category': self.category.name,
             'is_active': self.is_active
         }
