@@ -1,0 +1,23 @@
+<p>vacancy works!</p>
+<h1>id is : {{ id }}</h1>
+
+<h1>Update</h1>
+<fieldset>
+  <label>Vacancy name: </label>
+  <input type="text" [(ngModel)]="newName"><br>
+  <label>Vacancy description: </label>
+  <input type="text" [(ngModel)]="newDesc"><br>
+  <label>Vacancy salary: </label>
+  <input type="text" [(ngModel)]="newSalary"><br>
+  <button (click)="updateVacancy()">Update</button>
+</fieldset>
+
+
+<ul>
+  <li *ngIf="vacancy!=null">
+    name of Vacancy : {{ vacancy.name }}<br>
+    name of Company : {{ vacancy.company.name }}<br>
+    salary : {{ vacancy.salary }}$<br>
+    description : {{ vacancy.description }}<br>
+  </li>
+</ul>

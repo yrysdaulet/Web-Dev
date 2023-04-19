@@ -1,0 +1,31 @@
+<p>company works!</p>
+<h1>id is : {{ id }}</h1>
+
+
+<h1>Update Company</h1>
+<fieldset>
+
+  <label>Company name: </label>
+  <input type="text" [(ngModel)]="newCompanyName"><br>
+  <label>Company Description: </label>
+  <input type="text" [(ngModel)]="newCompanyDescription"><br>
+  <label>Company City: </label>
+  <input type="text" [(ngModel)]="newCompanyCity"><br>
+  <label>Company Address: </label>
+  <input type="text" [(ngModel)]="newCompanyAddress"><br>
+  <button (click)="updateCompany()">Update Company</button>
+
+</fieldset>
+
+
+<ul>
+  <li *ngIf="company!=null">
+    <h2>Company name : {{ company.name }} </h2>
+
+    <h2>Company Info : </h2>
+    description : {{ company.description }}<br>
+    city : {{ company.city }}<br>
+    address : {{ company.address }}<br><br>
+    <button routerLink="/companies/{{company.id}}/vacancies">Vacancies</button>
+  </li>
+</ul>
